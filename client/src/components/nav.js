@@ -11,13 +11,13 @@ const Nav = () => {
 
     const lightMoon = (
         <span role='img' aria-label="light mode moon emoji">
-            :lightMoon
+            {'\u{1F642}'}
         </span>
     );
     
     const darkMoon = (
         <span role='img' aria-label='dark mode moon emoji'>
-            :darkMoon
+            {'\u{1F311}'}	
         </span>
     );
     
