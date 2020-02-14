@@ -22,25 +22,37 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why would you use class component over function components (removing hooks from the question)?
-- [ ] Name three lifecycle methods and their purposes.
-- [ ] What is the purpose of a custom hook?
-- [ ] Why is it important to test our apps?
+- [x]Why would you use class component over function components (removing hooks from the question)?
+
+Everything I found said you would only use function components if you didn't need state, and that class components were more complicated but had more features. I don't know if that's true anymore, because of useState, you can do it in function components too. As far as I can tell, function components are almost always easier to use with less code.
+
+- [x] Name three lifecycle methods and their purposes.
+
+Constructor() is used to set state when a component is mounting, componentDidMount() invokes right after a component is mounted and can be used to connect with endpoints or set state, and render() returns everything from the calss when it is done mounting and renders it to the DOM.
+
+
+- [x] What is the purpose of a custom hook?
+
+It allows you to extract component logic or functions so that you don't have to reuse the same code over and over. It keeps your code cleaner by allowing you to import a hook and pass it props, rather than writing the entire code out again.
+
+- [x] Why is it important to test our apps?
+
+It allows you to detect defects in your code that you might not otherwise run into, but a user would.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Run `yarn` to download dependencies.
-- [ ] Run the server using `yarn start` or `node server.js`.
-- [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
-- [ ] Still inside the `client` folder run `yarn start` to run the client application.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [x] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [x] Run `yarn` to download dependencies.
+- [x] Run the server using `yarn start` or `node server.js`.
+- [x] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
+- [x] Still inside the `client` folder run `yarn start` to run the client application.
+- [x] Implement the project on this Branch, **committing progress & changes often.**
+- [x] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
