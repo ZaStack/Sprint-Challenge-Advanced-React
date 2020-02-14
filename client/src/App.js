@@ -26,12 +26,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <>
         <Nav />
-        {this.state.players.map(player => (
-          <PlayerCard key={player.id} player={player} />
-        ))}
-      </div>
+        <div className="container">
+          {this.state.players.map(player => (
+            <PlayerCard key={player.id} player={player} />
+          ))}
+        </div>
+      </>
     );
   }
 }

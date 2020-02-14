@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDarkMode } from '../hooks/useDarkMode.js';
+import './nav.css'
 
 const Nav = () => {
     const [darkMode, setDarkMode] = useDarkMode('Dark Mode', false);
@@ -23,8 +24,8 @@ const Nav = () => {
     
     return(
         <div className="navbar">
-            <h1 className="nav-title">Soccer Players - Rankings</h1>
-    <button onClick={toggleBtn}>{darkMode ? lightMoon : darkMoon}</button>
+            <h1 className="nav-title">Soccer Players</h1>
+            <button onClick={toggleBtn}>{darkMode ? lightMoon : darkMoon}</button>
         </div>
     );
 };
